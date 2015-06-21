@@ -1,7 +1,7 @@
 {
-  "site_name": "Shape Shed",
-  "description": "A JavaScript blog written by George Ornbo",
-  "keywords": "Node.js, Node, JavaScript, ECMAScript, George, Ornbo",
+  "site_name": "Samuel Green",
+  "description": "A blog written by Samuel Green, based on Shape Shed by George Ornbo",
+  "keywords": " Samuel, Green",
   "src_dir": "./src",
   "build_dir": "./build",
   "tags": {

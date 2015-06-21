@@ -1,10 +1,6 @@
-# shapeshed.com 
+# samuelgreen.org 
 
-[![Build Status](https://travis-ci.org/shapeshed/shapeshed.com.png?branch=master)](https://travis-ci.org/shapeshed/shapeshed.com)
-
-This is the source code for [shapeshed.com](http://shapeshed.com).
-
-The site is built on [flim](https://github.com/shapeshed/flim), a static site generator.
+This is the source code for [samuelgreen.org](http://samuelgreen.org). It's branched from the source for [shapeshed.com](http://shapeshed.com), and it's build on [flim](https://github.com/shapeshed/flim), a static site generator.
 
 ## Installation
 
@@ -16,7 +12,11 @@ The site is built on [flim](https://github.com/shapeshed/flim), a static site ge
 
 ## Deployment
 
-    make deploy
+This site is deployed on GitHub pages. Deployment via:
+	
+	make deploy
+
+Deploys the static build to its GitHub repository. 
 
 ## OSX specific notes
 
