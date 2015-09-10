@@ -18,7 +18,7 @@
   "description": "It is a blog",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shapeshed/shapeshed.com.git"
+    "url": "https://github.com/greensam/samuelgreenorg.git"
   },
   "engines": {
     "node": "*"

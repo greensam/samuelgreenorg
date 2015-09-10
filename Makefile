@@ -3,7 +3,8 @@ CSSMD5 = $(shell md5sum ./build/stylesheets/application* | awk '{ print $$1 }')
 JSMD5 = $(shell md5sum ./build/javascripts/application* | awk '{ print $$1}')
 
 build: flim copy-files concat-css min-css md5-css replace-css-string concat-js min-js md5-js replace-js-string
-deploy: gzip rsync
+deploy: 
+	rm -rf ../build/* && cp -r build/* ../build/ && cd ../build && git add . && git commit -m "build update" && git push origin gh-pages
 
 flim:
 	@./node_modules/flim/bin/flim generate
@@ -15,7 +16,7 @@ watch:
 	fswatch ./src make build
 
 concat-css:
-	@cat ./src/stylesheets/screen.css ./src/stylesheets/solarized_dark.min.css  > ./build/stylesheets/application.css.tmp
+	@cat ./src/stylesheets/custom.css ./src/stylesheets/screen.css ./src/stylesheets/solarized_dark.min.css > ./build/stylesheets/application.css.tmp
 
 min-css:
 	@./node_modules/cssmin/bin/cssmin ./build/stylesheets/application.css.tmp > ./build/stylesheets/application.css && rm ./build/stylesheets/application.css.tmp
