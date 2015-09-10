@@ -1,7 +1,7 @@
 {
   "layout": "post",
   "title": "A New Graph/FSM Drawer Is Born",
-  "date": "Sun Jun 21 2015",
+  "date": "Thurs Sept 10 2015",
   "description": "I extended a pretty awesome finite state machine diagramming utility to make it more useful for general graph applications",
   "tags": [
     "graph", "theory", "finite state machine", "fork"
