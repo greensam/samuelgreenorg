@@ -1,0 +1,7 @@
+.circle {
+	background-repeat: no-repeat;
+    background-position: 100%;
+    border-radius: 80%;
+    float: right;
+    height: 140px;
+}
