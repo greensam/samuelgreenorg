@@ -4,7 +4,7 @@ JSMD5 = $(shell md5sum ./build/javascripts/application* | awk '{ print $$1}')
 
 build: flim copy-files concat-css min-css md5-css replace-css-string concat-js min-js md5-js replace-js-string
 deploy: 
-	rm -rf ../build/* && cp -r build/* ../build/ && cd ../build && git add . && git commit -m "build update" && git push origin gh-pages
+	rm -rf ../build/* && cp -r build/* ../build/ && cd ../build/ && echo "samuelgreen.org" > CNAME && git add . && git commit -m "build update" && git push origin gh-pages
 
 flim:
 	@./node_modules/flim/bin/flim generate
