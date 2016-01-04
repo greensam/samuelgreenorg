@@ -1,7 +1,7 @@
 {
   "layout": "post",
   "title": "Procastinate Better",
-  "date": "Mon Jan 4 2015",
+  "date": "Mon Jan 4 2016",
   "description": "Productivity app?",
   "tags": [
     "reddit", "procastination", "productivity"
